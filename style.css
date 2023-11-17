@@ -1,0 +1,231 @@
+ @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+
+  @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+
+
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing:  border-box;
+  font-family: 'Josefin Sans', sans-serif;
+  color:  #333;
+  transition:  .4s ease-in-out;
+}
+
+body{
+  width:  100%;
+  height:  100vh;
+  display: flex;
+  justify-content:  center;
+  align-items:  center;
+  background: rgb(223,213,250);
+background: linear-gradient(0deg, rgba(223,213,250,1) 51%, rgba(255,255,255,1) 100%);
+background-size:  cover;
+background-repeat:  no-repeat;
+}
+
+.box{
+  position:  relative;
+  padding: 50px;
+}
+
+
+form{
+  padding: 20px 50px;
+  background: rgba( 255, 255, 228, 0.01 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.3 );
+backdrop-filter: blur( 13.5px );
+-webkit-backdrop-filter: blur( 10px );
+border-radius: 12px;
+border: 2px solid rgba( 255, 255, 255, 0.5 );
+z-index:  10;
+}
+
+form:hover {
+ border: 2.5px solid rgba( 255, 255, 255, 1 ); 
+}
+
+.box img{
+  position: absolute;
+  width: 280px;
+  height:  280px;
+  z-index: -1;
+}
+
+.box .one{
+  top: -50px;
+  left:  -50px;
+}
+
+.box .two{
+  bottom:  -50px;
+  right:  -50px;
+}
+
+
+
+
+form h1{
+  margin: 1rem 0;
+  text-align:  center;
+  font-size: 2.2rem;
+  text-transform:  capitalize;
+}
+
+form .icons-box{
+  display:  flex;
+  flex-flow:  row nowrap;
+  justify-content:  space-around;
+  align-items:  center;
+  padding:  8px 20px;
+}
+
+form .icons-box i{
+  width: 30px;
+  height:  30px;
+  display:  flex;
+  flex-flow:  row nowrap;
+  justify-content:  space-around;
+  align-items:  center;
+  background:  rgba(255,255,255,.3);
+  font-size:  1rem;
+  border-radius:  3px;
+  border:  1px solid rgba(255,255,255,.7)
+}
+
+
+form .icons-box i:hover{
+border:  2px solid rgba(255,255,255,1);
+}
+
+form span{
+  display:  block;
+  text-align:  center;
+  margin:  20px 0;
+}
+
+form .input-box{
+  display:  flex;
+  flex-flow: column nowrap;
+  justify-content:  center;
+  align-items:  center;
+  gap:  10px;
+}
+
+form .input-box input{
+  display:  block;
+  width:  100%;
+  padding:  6px 10px;
+  background : rgba(255,255,255, .3);
+  border:  none;
+  outline:  none;
+  border-radius: 6px;
+  color:  #222;
+}
+
+
+form .remember{
+  display:  flex;
+  flex-flow:  row nowrap;
+  justify-content:  flex-start;
+  align-items:  center;
+  margin:  15px 0;
+  position:  relative;
+}
+
+
+form .remember .fa-solid{
+  position:  absolute;
+  top:  0;
+  left: 0;
+ font-size:  1.6rem;
+ visibility:  hidden
+}
+
+
+.checkbox:checked + .fa-solid{
+  visibility:  visible;
+}
+
+form .remember input{
+  appearance:  none ;
+  margin-left:  3px;
+  width:  20px;
+  height:  20px;
+  background: #fff6;
+  border:  1px solid #fff8;
+  border-radius:  3px;
+}
+
+form .remember label{
+  margin-left:  8px;
+}
+
+form .button{
+ display:  flex;
+  flex-flow:  row nowrap;
+  justify-content: center;
+  align-items:  center;
+}
+
+
+
+
+form button{
+  display:  block;
+  text-align:  center;
+  padding:  8px 25px;
+  font-size:  1.2rem;
+  font-weight:  700;
+  border-radius:  10px;
+  background:  rgba(255,255,255,.33);
+  border:  2px solid rgba(223,213,250,1);
+  margin-bottom:  10px;
+}
+
+
+form button:hover{
+  background:  #fff;
+}
+
+@media (max-width:490px){
+  
+  .box img{
+  width: 130px;
+}
+
+.box .one{
+top: -80px;
+left: -10px;
+  }
+
+.box .two{
+  bottom: -80px;
+  right: -10px;
+}
+
+form{
+padding:  20px 30px 10px;
+width:  260px;
+height:  340px;
+}
+
+
+form h1{
+  margin:  .5rem;
+  font-size:  2.1rem;
+}
+
+form .icons-box i{
+  width:  25px;
+  height:  25px;
+  font-size:  .9rem;
+}
+
+form span{
+  margin:  10px 0;
+}
+}
